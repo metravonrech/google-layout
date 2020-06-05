@@ -1,0 +1,321 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.container .container-wrapper .input-wrapper .input-wrapper-right, .container .container-wrapper .input-wrapper .input-wrapper-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: inherit;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Gadget, sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.header {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+.header .menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+}
+.header .menu .menu-item {
+  font-size: 0.85em;
+  cursor: pointer;
+  margin: 15px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+.header .menu .menu-item:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+.header .menu .menu-item:nth-child(3) {
+  opacity: 0.7;
+}
+.header .menu .menu-item:nth-child(3):hover {
+  opacity: 1;
+}
+.header .menu .menu-item:last-child {
+  font-weight: bold;
+  padding: 12px 20px;
+  color: white;
+  background-color: #4485F4;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.container {
+  height: 100%;
+  margin-top: 70px;
+}
+.container .container-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.container .container-wrapper .logo {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.container .container-wrapper .input-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20px;
+  min-width: 340px;
+  width: 40%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border: 1px solid #dcdcda;
+  border-radius: 40px;
+  padding: 10px 5px;
+}
+.container .container-wrapper .input-wrapper:hover, .container .container-wrapper .input-wrapper:focus, .container .container-wrapper .input-wrapper:active {
+  -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+.container .container-wrapper .input-wrapper .input-wrapper-left {
+  -webkit-flex-basis: 75%;
+  -ms-flex-preferred-size: 75%;
+  flex-basis: 75%;
+}
+.container .container-wrapper .input-wrapper .input-wrapper-left input {
+  padding: 0;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  height: 90%;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 0.8em;
+  overflow: hidden;
+}
+.container .container-wrapper .input-wrapper .input-wrapper-left img {
+  height: 20px;
+  margin: 0 15px 0 5px;
+  opacity: 0.5;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+.container .container-wrapper .input-wrapper .input-wrapper-right {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-basis: 25%;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+}
+.container .container-wrapper .input-wrapper .input-wrapper-right img {
+  width: auto;
+  height: 100%;
+  margin: 0 5px;
+}
+.container .container-footer {
+  width: 100%;
+  margin-top: 40px;
+}
+.container .container-footer .buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.container .container-footer .buttons button {
+  font-weight: 500;
+  border: 1px solid #f1f1f1;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 10px;
+  color: #5f6368;
+}
+.container .container-footer .buttons button:hover {
+  border: 1px solid #dcdcda;
+  color: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#F1F1F1)) #E38916;
+  background: -o-linear-gradient(#F8F8F8, #F1F1F1) #E38916;
+  background: linear-gradient(#F8F8F8, #F1F1F1) #E38916;
+}
+.container .container-footer .buttons button:active, .container .container-footer .buttons button:focus {
+  outline: none;
+  border: 1px solid blue;
+  color: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#F1F1F1)) #E38916;
+  background: -o-linear-gradient(#F8F8F8, #F1F1F1) #E38916;
+  background: linear-gradient(#F8F8F8, #F1F1F1) #E38916;
+}
+.container .container-footer p {
+  margin-top: 30px;
+  text-align: center;
+}
+.container .container-footer a {
+  color: blue;
+  text-decoration: none;
+}
+.container .container-footer a:hover, .container .container-footer a:active {
+  text-decoration: underline;
+}
+
+.footer {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  color: #5f6368;
+}
+.footer .line-menu {
+  background-color: #F2F2F2;
+  padding: 14px;
+}
+.footer .line-menu:first-child {
+  border-bottom: 1px solid #dcdcda;
+  border-top: 1px solid #dcdcda;
+}
+.footer .line-menu:first-child span {
+  margin: 0 5px;
+  cursor: pointer;
+}
+.footer .line-menu:last-child {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.footer .line-menu:last-child span {
+  margin: 0 5px;
+  cursor: pointer;
+}
+.footer .line-menu:last-child span:hover {
+  text-decoration: underline;
+}
