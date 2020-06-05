@@ -1,0 +1,196 @@
+@import "reset.css";
+
+$grey: rgb(220, 220, 218);
+$text-grey: #5f6368;
+
+%input-wrapper-side{
+    display: flex;
+    height: inherit;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+
+body{
+    //height: calc(100vh - 3px);
+    height: 100vh;
+    width: 100%;
+
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Gadget, sans-serif;
+    color: rgba(0,0,0,0.87);
+
+}
+
+.header{
+    align-self: flex-end;
+    .menu{
+        display: flex;;
+        height: 70px;
+        .menu-item{
+            font-size: 0.85em;
+            cursor: pointer;
+            margin: 15px;
+            align-self: center;
+            &:hover{
+                opacity: .85;
+                text-decoration: underline;
+            }
+            &:nth-child(3){
+                opacity: 0.7;
+            }
+            &:nth-child(3):hover{
+                opacity: 1;
+            }
+            &:last-child{
+                font-weight: bold;
+                padding: 12px 20px;
+                color: white;
+                background-color: #4485F4;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.container{
+    height: 100%;
+    margin-top: 70px;
+    .container-wrapper{
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        justify-content: center;
+        .logo{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .input-wrapper{
+            display: flex;
+            height: 20px;
+            min-width: 340px;
+            width: 40%;
+            justify-content: space-between;
+            border: 1px solid $grey;
+            border-radius: 40px;
+            padding: 10px 5px;
+            &:hover, &:focus, &:active{
+                box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28)
+            }
+            .input-wrapper-left{
+                @extend %input-wrapper-side;
+                //justify-content: stretch;
+                flex-basis: 75%;
+                input{
+                    padding: 0;
+                    align-self: center;
+                    height: 90%;
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    font-size: 0.8em;
+                    overflow: hidden;
+                }
+                img{
+                    height: 20px;
+                    margin: 0 15px 0 5px;
+                    opacity: 0.5;
+                    align-self: center;
+                }
+            }
+            .input-wrapper-right {
+                @extend %input-wrapper-side;
+                justify-content: flex-end;
+                flex-basis: 25%;
+                img {
+                    width: auto;
+                    height: 100%;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+    .container-footer{
+        width: 100%;
+        margin-top: 40px;
+        .buttons{
+            display: flex;
+            justify-content: center;
+            button{
+                font-weight: 500;
+                border: 1px solid #f1f1f1;
+                box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+                padding: 10px 16px;
+                border-radius: 4px;
+                text-align: center;
+                cursor: pointer;
+                margin: 0 10px;
+                color: $text-grey;
+                &:hover{
+                    border: 1px solid $grey;
+                    color: black;
+                    background: linear-gradient(#F8F8F8, #F1F1F1) #E38916;
+                }
+                &:active, &:focus{
+                    outline: none;
+                    border: 1px solid blue;
+                    color: black;
+                    background: linear-gradient(#F8F8F8, #F1F1F1) #E38916;
+                }
+            }
+        }
+        p{
+            margin-top: 30px;
+            text-align: center;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+            &:hover, &:active{
+                text-decoration: underline;
+            }
+        }
+
+    }
+}
+
+.footer{
+    flex-shrink: 0;
+    align-self: stretch;
+    color: $text-grey;
+    .line-menu{
+        background-color: #F2F2F2;
+        padding: 14px;
+
+        &:first-child{
+            border-bottom: 1px solid $grey;
+            border-top: 1px solid $grey;
+            span{
+                margin: 0 5px;
+                cursor: pointer;
+            }
+        }
+        &:last-child{
+            display: flex;
+            justify-content: space-between;
+            span{
+                margin: 0 5px;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+
